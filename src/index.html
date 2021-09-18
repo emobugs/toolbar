@@ -1,18 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>HTML, CSS and SASS Boilerplate</title>
-    <meta
-      name="description"
-      content="Used as a boilerplate for tasks in the 'HTML, CSS and SASS' course in boom.dev"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <div class="main">
-      <div class="emoji mb-6">💣🤯💥</div>
-      <button class="button">Boom?</button>
-    </div>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<title>HTML, CSS and SASS Boilerplate</title>
+		<meta
+			name="description"
+			content="Used as a boilerplate for tasks in the 'HTML, CSS and SASS' course in boom.dev"
+		/>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			body {
+				height: 1000vh;
+			}
+
+			.navbar {
+				position: fixed;
+				width: 100%;
+				background-color: red;
+			}
+
+			.nav {
+				display: flex;
+				flex-direction: row;
+				padding: 0;
+				padding: 10px;
+			}
+
+			.nav li {
+				list-style: none;
+				margin-left: 20px;
+				padding: 10px;
+				transition: background-color 200ms;
+				border-radius: 5px;
+			}
+
+			.nav li:hover {
+				background-color: rgb(235, 0, 0);
+			}
+
+			.nav li a {
+				text-decoration: 0;
+				color: #fff;
+				font-size: 24px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="navbar">
+			<ul class="nav">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Products</a></li>
+				<li><a href="#">Contacts</a></li>
+			</ul>
+		</div>
+	</body>
 </html>
