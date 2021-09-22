@@ -27,3 +27,13 @@ html {
   font-size: 10rem;
   flex-flow: column;
 }
+
+body {
+  height: 1000vh;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  background-color: red;
+}
